@@ -1,0 +1,194 @@
+body {
+    background: linear-gradient(180deg, lightgrey 30%, white 50%);
+    padding: 0px;
+    min-width: 700px;
+}
+body.login_page {
+    background-image: url(background.jpg);
+    text-align: center;
+}
+header {
+    display: flex;
+    background-color: rgba(95,39,95,0.4);
+    padding: 2%;
+    position: sticky;
+    top: 0;
+    background: inherit;
+    border-bottom-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(95,39,95,1);
+}
+main {
+    position: inherit;
+    width: 95%;
+   /* min-width: 700px;*/
+    padding: 2%;
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+}
+main > div {
+    background: linear-gradient(360deg, lightgray , white);
+    border-radius: 14px;
+}
+table {
+    position: inherit;
+    font-family: lato, sans-serif;
+    border: 0.1em solid;
+    border-collapse: collapse;
+}
+th {
+    text-align: center;
+    padding: 3%;
+    background-color: aqua;
+}
+td, th {
+    border: 0.1em solid;
+    width: 10%;
+}
+tr {
+    height: 2em;
+}
+table tr:nth-child(even) {
+    background-color: rgba(95,39,95,0.4);
+    color: white;
+}
+table tr td .markinput {
+    visibility: none;
+   /*background-color: rgba(75, 75, 75, 0.0);*/
+}
+nav {
+    width: 700px;
+    height: 2em;
+    margin-top: 25px;
+   /* border-bottom-right-radius: 1em;
+    border-bottom-left-radius: 1em;
+    padding: 0.5em;
+    background: linear-gradient(360deg, rgba(95,39,95,0.4) 10%, rgba(95,39,95,0.0)  50%);*/
+    margin-left: 10%;
+   /* border-top-style: none;
+	border-left-style: none;
+	border-right-style: none;
+    border-bottom-style: solid;*/
+    border-bottom-color: rgba(95,39,95,0.9);
+}
+nav ul {
+    /*display: flex;
+    /*padding-right: 2em;*/
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+    position: relative;
+}
+nav > ul > li.active > a{
+    color: white;
+    font-weight: 400;
+}
+nav > ul > li.active {
+    background-color: aqua;
+}
+nav ul li {
+   /* height: 3em;*/
+    text-decoration: none;
+    display: inline-block;
+    padding-right: 1em;
+    padding-left: 1em;
+    background-color: rgba(95,39,95,0.8);
+    border-radius: 20px;
+}
+nav a {
+    display: block;
+    color: darkgray;
+    transition: 1s;
+    text-decoration: none;
+    line-height: 30px;
+    padding: 0, 30px;
+}
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 30px;
+}
+nav ul li:hover > ul {
+    display: inherit;
+}
+nav ul ul li {
+    width: 170px;
+    float: none;
+    display: list-item;
+    position: relative;
+}
+nav ul ul ul li {
+    position: relative;
+    top: -30px;
+    left: 170px;
+}
+li > a::after {content: ' +';}
+li > a:only-child::after{content: '';}
+nav ul a:hover {
+    color: white;
+    text-decoration: underline;
+    border-radius: 50%;
+    text-decoration-color: beige;
+}
+.primary > h2 {
+    text-align: center;
+}
+
+
+form {
+	text-align: left;
+	width: 50%;
+	background-color: rgba(95,39,95,0.5);
+    padding: 3em;
+    border-radius: 1em;
+    margin-left: 15%;
+    margin-bottom: 5%;
+}
+form.tableform {
+    background-color: inherit;
+}
+form input, form select, form > .error {
+	border-bottom-right-radius: 10px;
+	border-top-style: none;
+	border-left-style: none;
+	border-right-style: none;
+	width: 70%;
+	padding: 5px;
+	margin-top: 4px;
+	background-color: rgba(95,95,95,0.02);
+}
+form input:hover, select:hover {
+    border-bottom-color: lightskyblue;
+}
+/*form input:valid, form select:valid {
+    border-bottom-color: lightgreen;
+}*/
+form > input.submit {
+    color: aqua;
+    width: 90px;
+
+}
+form > input[type='radio'], form input[type='checkbox'] {
+    width: 15px;
+}
+form > input:hover::placeholder {
+    color: lightskyblue;
+    transform:translateX(35px);
+    transition-property: all;
+    transition: ease-out;
+    transition-duration: 1s;
+}
+form > label {
+    font-size: larger;
+}
+
+@media screen and (max-width: 767px) {
+    body{
+        width: 100%;
+     }
+
+     nav{
+        width: 90%;
+     }
+}

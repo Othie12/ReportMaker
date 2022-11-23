@@ -1,0 +1,57 @@
+body{
+    border-style: outset;
+    padding: 3vw;
+}
+div.keen {
+}
+div.keen p {
+    display: inline-block;
+}
+main {
+    margin-top: 3%;
+ }
+.title h1 {
+    font-size:3vw;
+    color: black;
+    border-bottom-color: black;
+    margin: 0;
+ }
+ .title:nth-child(1){
+    border-bottom-style:solid;
+ }
+.title{
+    text-align: center;
+}
+.title h2 {
+    color: black;
+    margin: 0;
+}
+.extras{
+    display: inline-flex;
+}
+table {
+    position: inherit;
+    font-family: lato, sans-serif;
+    border: 0.1em solid;
+    border-collapse: collapse;
+}
+th {
+    text-align: center;
+    padding: 1%;
+    background-color: aqua;
+}
+td, th {
+    border: 0.1em solid;
+    width: 10%;
+}
+tr {
+    height: 2em;
+}
+table tr:nth-child(even) {
+    background-color: rgba(95,39,95,0.4);
+    color: white;
+}
+table tr td .markinput {
+    visibility: none;
+   /*background-color: rgba(75, 75, 75, 0.0);*/
+}
